@@ -1,5 +1,4 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 const services = [
   {
@@ -25,7 +24,7 @@ const services = [
   },
 ];
 
-const cardVariants = {
+const cardVariants: Variants = {
   offscreen: {
     y: 50,
     opacity: 0,
