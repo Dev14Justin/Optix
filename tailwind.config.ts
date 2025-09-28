@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from 'tailwindcss'
+
 export default {
   content: [
     "./index.html",
@@ -9,9 +10,9 @@ export default {
       colors: {
         primary: {
           DEFAULT: '#0c00ff',
-          light: '#F5F8FF', // Très clair pour les fonds de section
-          dark: '#0A00D1',   // Pour les hover ou éléments actifs
-          darker: '#06007A', // Pour le footer ou textes sombres
+          light: '#F5F8FF',
+          dark: '#0A00D1',
+          darker: '#06007A',
         },
         accent: '#fee100',
         'texte-principal': '#1C1C1C',
@@ -24,4 +25,4 @@ export default {
     },
   },
   plugins: [],
-}
+} satisfies Config
