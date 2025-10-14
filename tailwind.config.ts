@@ -1,12 +1,13 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        heading: ['Sora', 'sans-serif'],
+      },
       colors: {
         primary: {
           DEFAULT: '#0c00ff',
@@ -14,15 +15,17 @@ export default {
           dark: '#0A00D1',
           darker: '#06007A',
         },
-        accent: '#fee100',
-        'texte-principal': '#1C1C1C',
-        'texte-secondaire': '#6B7280',
-        'background': '#FFFFFF',
-      },
-      fontFamily: {
-        sans: ['Urbanist', 'sans-serif'],
+        accent: {
+          DEFAULT: '#fee100',
+          light: '#FFFAEB',
+          dark: '#E6CD00',
+        },
+        background: 'var(--color-background)',
+        surface: 'var(--color-surface)',
+        'texte-principal': 'var(--color-texte-principal)',
+        'texte-secondaire': 'var(--color-texte-secondaire)',
       },
     },
   },
   plugins: [],
-} satisfies Config
+} satisfies Config;

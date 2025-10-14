@@ -47,7 +47,7 @@ const itemVariants = {
 
 const ValuesSection = () => {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-background py-20">
       <div className="container mx-auto px-6 text-center">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -77,7 +77,7 @@ const ValuesSection = () => {
         >
           {values.map((value) => (
             <motion.div key={value.title} variants={itemVariants} className="flex flex-col items-center">
-              <div className="p-4 bg-gray-100 rounded-full">
+              <div className="p-4 bg-surface rounded-full">
                 {value.icon}
               </div>
               <h3 className="mt-6 text-2xl font-bold text-texte-principal">{value.title}</h3>

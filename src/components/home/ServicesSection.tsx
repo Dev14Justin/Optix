@@ -42,7 +42,7 @@ const cardVariants: Variants = {
 
 const ServicesSection = () => {
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-background py-20">
       <div className="container mx-auto px-6">
         <motion.div
           initial="offscreen"
@@ -74,7 +74,7 @@ const ServicesSection = () => {
               viewport={{ once: true, amount: 0.5 }}
               variants={cardVariants}
               whileHover={{ scale: 1.05 }}
-              className="relative p-8 bg-white rounded-xl shadow-lg overflow-hidden"
+              className="relative p-8 bg-surface rounded-xl shadow-lg dark:shadow-2xl dark:shadow-primary/10 overflow-hidden"
             >
               <motion.div
                 whileHover={{ rotate: [0, -15, 15, 0], transition: { duration: 0.5 } }}

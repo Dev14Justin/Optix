@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
+import { useTheme } from '../../hooks/useTheme';
 
 const data = [
   { name: 'Jan', value: 400 },
@@ -11,8 +12,10 @@ const data = [
 ];
 
 const DataInsightsSection = () => {
+  const { theme } = useTheme();
+
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-surface py-20">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -40,14 +43,14 @@ const DataInsightsSection = () => {
           >
             <ResponsiveContainer>
               <LineChart data={data}>
-                <CartesianGrid strokeDasharray="3 3" strokeOpacity={0.2} />
-                <XAxis dataKey="name" stroke="#6B7280" />
-                <YAxis stroke="#6B7280" />
+                <CartesianGrid strokeDasharray="3 3" strokeOpacity={theme === 'dark' ? 0.1 : 0.2} />
+                <XAxis dataKey="name" stroke={theme === 'dark' ? '#A0A0A0' : '#6B7280'} />
+                <YAxis stroke={theme === 'dark' ? '#A0A0A0' : '#6B7280'} />
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                    backgroundColor: theme === 'dark' ? '#1E1E1E' : '#FFFFFF',
                     borderColor: '#fee100',
-                    color: '#1C1C1C',
+                    color: theme === 'dark' ? '#FFFFFF' : '#1C1C1C',
                   }}
                 />
                 <Line

@@ -2,6 +2,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-background: #FFFFFF;
+    --color-surface: #F9FAFB; /* Using a light gray for surfaces */
+    --color-text-principal: #1C1C1C;
+    --color-text-secondaire: #6B7280;
+  }
+
+  .dark {
+    --color-background: #121212;
+    --color-surface: #1E1E1E;
+    --color-text-principal: #FFFFFF;
+    --color-text-secondaire: #A0A0A0;
+  }
+}
 
 @layer utilities {
   @keyframes blob {

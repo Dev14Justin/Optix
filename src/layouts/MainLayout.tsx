@@ -8,9 +8,9 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background text-texte-principal">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow pt-16"> {/* Add padding top to avoid content being hidden by fixed navbar */}
         {children}
       </main>
       <Footer />
