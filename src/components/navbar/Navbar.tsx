@@ -10,20 +10,20 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <a href="#" className="text-texte-secondaire hover:text-primary block md:inline-block py-2 md:py-0">Services</a>
-      <a href="#" className="text-texte-secondaire hover:text-primary block md:inline-block py-2 md:py-0">Solutions</a>
-      <a href="#" className="text-texte-secondaire hover:text-primary block md:inline-block py-2 md:py-0">Insights</a>
-      <a href="#" className="text-texte-secondaire hover:text-primary block md:inline-block py-2 md:py-0">Projet</a>
-      <a href="#" className="text-texte-secondaire hover:text-primary block md:inline-block py-2 md:py-0">A Propos</a>
-      <a href="#" className="bg-blue-600 text-white rounded-md px-4 py-2 hover:bg-blue-700 transition-colors block md:inline-block text-center">Contact</a>
+      <a href="#" className="text-white hover:text-primary block md:inline-block py-2 md:py-0">Services</a>
+      <a href="#" className="text-white hover:text-primary block md:inline-block py-2 md:py-0">Solutions</a>
+      <a href="#" className="text-white hover:text-primary block md:inline-block py-2 md:py-0">Insights</a>
+      <a href="#" className="text-white hover:text-primary block md:inline-block py-2 md:py-0">Projet</a>
+      <a href="#" className="text-white hover:text-primary block md:inline-block py-2 md:py-0">A Propos</a>
+      <a href="#" className="bg-white text-blue-700 rounded-md px-4 py-2 hover:bg-white transition-colors block md:inline-block text-center">Contact</a>
     </>
   );
 
   return (
-    <header className="bg-surface/80 backdrop-blur-lg shadow-md fixed top-0 left-0 right-0 z-50 border-b border-transparent dark:border-gray-800">
+    <header className="bg-blue-700/80 backdrop-blur-lg shadow-md fixed top-0 left-0 right-0 z-50 border-b border-transparent dark:border-gray-800">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-semibold text-texte-principal">
+          <div className="text-xl font-semibold text-white">
             Optix
           </div>
 

@@ -9,7 +9,7 @@ const cardVariants: Variants = {
     y: 0,
     opacity: 1,
     transition: {
-      type: 'spring',
+      type: 'spring', 
       bounce: 0.4,
       duration: 0.8,
     },
