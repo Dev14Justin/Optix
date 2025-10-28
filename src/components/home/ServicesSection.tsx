@@ -41,8 +41,8 @@ const services = [
     icon: (
         <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" /></svg>
     ),
-    title: 'Vente de Données',
-    description: 'Accédez à des ensembles de données riches et qualifiées pour alimenter vos modèles et vos stratégies.',
+    title: "Vente d'Insights",
+    description: 'Accédez à des ensembles de raports analytiques anonymisées riches et qualifiées pour alimenter vos modèles et vos stratégies.',
     gradient: 'from-orange-500 to-orange-600',
     shadowColor: 'shadow-orange-500/25',
   },

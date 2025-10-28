@@ -15,6 +15,7 @@ const Navbar = () => {
       <a href="#" className="text-white hover:text-primary block md:inline-block py-2 md:py-0">Insights</a>
       <a href="#" className="text-white hover:text-primary block md:inline-block py-2 md:py-0">Projet</a>
       <a href="#" className="text-white hover:text-primary block md:inline-block py-2 md:py-0">A Propos</a>
+      <a href="#" className="text-white hover:text-primary block md:inline-block py-2 md:py-0">Blog</a>
       <a href="#" className="bg-white text-blue-700 rounded-md px-4 py-2 hover:bg-white transition-colors block md:inline-block text-center">Contact</a>
     </>
   );
@@ -23,19 +24,17 @@ const Navbar = () => {
     <header className="bg-blue-700/80 backdrop-blur-lg shadow-md fixed top-0 left-0 right-0 z-50 border-b border-transparent dark:border-gray-800">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-semibold text-white">
-            Optix
-          </div>
+          <img src="./logo_optix.png" alt="Logo" className='w-22 h-auto' />
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-4">
             {navLinks}
-            <ThemeSwitcher />
+            {/* <ThemeSwitcher /> */}
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <ThemeSwitcher />
+            {/* <ThemeSwitcher /> */}
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="ml-4 text-texte-principal">
               {isMenuOpen ? <CloseIcon className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}
             </button>

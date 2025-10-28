@@ -1,10 +1,10 @@
 import { motion, type Variants } from 'framer-motion';
 
 const stats = [
-  { number: '50+', label: 'Projets Réalisés' },
-  { number: '25+', label: 'Clients Satisfaits' },
-  { number: '3', label: 'Années d\'Expérience' },
-  { number: '100%', label: 'Taux de Satisfaction' },
+  { number: '+30', label: 'Projets Réalisés' },
+  { number: '2', label: 'Solutions digitales' },
+  { number: '10', label: 'Entreprises partenaires' },
+  { number: '99%', label: 'Taux de Satisfaction' },
 ];
 
 
