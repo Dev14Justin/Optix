@@ -48,7 +48,7 @@ const AboutSection = () => {
         <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-br from-blue-400/5 to-purple-400/5 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-br from-yellow-400/5 to-orange-400/5 rounded-full blur-3xl" />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-green-400/3 to-blue-400/3 rounded-full blur-3xl" />
-      </div>
+      </div> 
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header Section */}
