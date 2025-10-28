@@ -16,7 +16,7 @@ const HomePage = () => {
       <ServicesSection />
       <DataInsightsSection />
       <ValuesSection />
-      <NewsletterSection />
+      <NewsletterSection /> 
       <CtaSection />
     </>
   );

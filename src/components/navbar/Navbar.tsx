@@ -1,7 +1,7 @@
 
 
 import { useState } from 'react';
-import ThemeSwitcher from '../buttons/ThemeSwitcher';
+// import ThemeSwitcher from '../buttons/ThemeSwitcher';
 import MenuIcon from '../icons/MenuIcon';
 import CloseIcon from '../icons/CloseIcon';
 
@@ -29,11 +29,11 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-4">
             {navLinks}
-            {/* <ThemeSwitcher /> */}
+            {/* <ThemeSwitcher /> */} 
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center"> 
             {/* <ThemeSwitcher /> */}
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="ml-4 text-texte-principal">
               {isMenuOpen ? <CloseIcon className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}

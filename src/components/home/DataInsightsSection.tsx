@@ -18,7 +18,7 @@ const stats = [
   { label: 'Satisfaction Client', value: '94%', icon: '⭐' },
 ];
 
-const cardVariants: Variants = {
+const cardVariants: Variants = {  
   offscreen: {
     y: 50,
     opacity: 0,

@@ -53,7 +53,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Header Section */}
         <motion.div
-          initial="offscreen"
+          initial="offscreen"  
           whileInView="onscreen"
           viewport={{ once: true, amount: 0.5 }}
           transition={{ staggerChildren: 0.2 }}
