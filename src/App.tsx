@@ -1,6 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainLayout from './layouts/MainLayout';
-import { HomePage } from './pages';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import {
+  HomePage,
+  AboutPage,
+  ServicesPage,
+  ProjectsPage,
+  ContactPage,
+  InsightsPage,
+  BlogPage,
+} from "./pages";
 
 function App() {
   return (
@@ -8,7 +16,12 @@ function App() {
       <MainLayout>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/* Other routes will be added here */}
+          <Route path="/a-propos" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/projets" element={<ProjectsPage />} />
+          <Route path="/insights" element={<InsightsPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </MainLayout>
     </Router>
